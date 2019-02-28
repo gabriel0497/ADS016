@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Cadastro de Alunos</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        
+        <h1>Cadastrar Aluno</h1>
+        
+        <label>ID:</label>
+        <input type="hidden" value=""/><br/></br>
+        <!--Esses componentes estão invisíveis-->
+        
+        <label>Matrícula:</label>
+        <input type="text" size="10"/><br/></br>
+        
+        <label>Nome:</label>
+        <input type="text" size="30"/><br/></br>
+        
+        <label>Email:</label>
+        <input type="text" size="30"/><br/></br>
+        
+        <label>UF:</label>
+            <select>
+                <option>DF</option>
+                <option>GO</option>
+            </select><br/></br>
+         
+            <label>Cursos Desejados:</label></br>
+            <input type="checkbox"/> Análise e Desenvolvimento de Sistemas<br/>
+            <input type="checkbox"/> Jogos Digitais<br/>
+            <input type="checkbox"/> Redes de Computadores<br/>
+            <input type="checkbox"/> Segurança da Informação<br/></br>
+            
+            <label>Bolsa de Estudo:</label></br>
+            <input type="radio"/> Integral 100%<br/>
+            <input type="radio"/> Parcial 75%<br/>
+            <input type="radio"/> Parcial 50%<br/>
+            <input type="radio"/> Parcial 25%<br/>
+            <input type="radio"/> Sem Bolsa<br/></br>
+            
+            <input type="submit" value="Salvar">
+            <input type="reset" value="Desistir"><br/></br>
+           
+    </body>
+</html>
