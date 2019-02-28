@@ -59,8 +59,11 @@ nav li a:hover
     flex: 3;
 padding: 10px;
 }
-active
+.active
 {
-    background: #eee;
+background: #eee;
 color: white;
 }
+
+
+
