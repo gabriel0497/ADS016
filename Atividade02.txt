@@ -1,112 +1,112 @@
-1. Trabalhar com componentes visuais de um formul·rio HTML
+Ôªø1. Trabalhar com componentes visuais de um formul√°rio HTML
 
 a) Abra o aplicativo NetBeans IDE.
 
-b) No menu Arquivo escolha a opÁ„o Novo Projeto. Selecione a categoria HTML5/JavaScript e o projeto AplicaÁ„o HTML5/JS.
+b) No menu Arquivo escolha a op√ß√£o Novo Projeto. Selecione a categoria HTML5/JavaScript e o projeto Aplica√ß√£o HTML5/JS.
 
-c) Prossiga definindo o nome Atividade02 ao projeto. Verifique se a localizaÁ„o do projeto est· indicando a pasta ADS016. Sen„o estiver, localize-a acionando Procurar. 
+c) Prossiga definindo o nome Atividade02 ao projeto. Verifique se a localiza√ß√£o do projeto est√° indicando a pasta ADS016. Sen√£o estiver, localize-a acionando Procurar. 
 
-d) Prossiga selecionando a opÁ„o Nenhum Modelo de Site. Em seguida, desmarque todos os itens de ferramentas e finalize o assistente.
+d) Prossiga selecionando a op√ß√£o Nenhum Modelo de Site. Em seguida, desmarque todos os itens de ferramentas e finalize o assistente.
 
 e) Renome o arquivo index.html para formulario.html (Dica: selecione o arquivo e pressione F2).
 
-f) Personalize o tÌtulo da p·gina formulario.html (Ex.: <title>Formul·rios HTML</title>).
+f) Personalize o t√≠tulo da p√°gina formulario.html (Ex.: <title>Formul√°rios HTML</title>).
 
-g) Altere o corpo da p·gina acrescentando um formul·rio.
+g) Altere o corpo da p√°gina acrescentando um formul√°rio.
 
 <form></form>
 
-h) Dentro do formul·rio crie um campo de texto com tamanho 30.
+h) Dentro do formul√°rio crie um campo de texto com tamanho 30.
  
-<label>Isto È um campo de texto</label>
+<label>Isto √© um campo de texto</label>
 <input type="text" size="30"/><br/>
 
 i) Execute o arquivo index.html e observe o resultado. 
 
 j) Crie mais dois campos de texto sendo um somente leitura e outro desabilitado.
 
-<label>Isto È um campo de texto somente leitura</label>
+<label>Isto √© um campo de texto somente leitura</label>
 <input type="text" size="30" readonly="readonly"/><br/>
-<label>Isto È um campo de texto desabilitado</label>
+<label>Isto √© um campo de texto desabilitado</label>
 <input type="text" size="30" disabled="disabled"/><br/>
 
-k) Recarregue a p·gina HTML no navegador e tente preencher os campos. 
+k) Recarregue a p√°gina HTML no navegador e tente preencher os campos. 
 
-l) Crie uma ·rea de texto com 5 linhas e 30 colunas. Em seguida, recarregue a p·gina.
+l) Crie uma √°rea de texto com 5 linhas e 30 colunas. Em seguida, recarregue a p√°gina.
 
-<label>Isto È uma ·rea de texto</label>
+<label>Isto √© uma √°rea de texto</label>
 <textarea rows="5" cols="30"></textarea><br/>
 
-m) Crie um campo oculto. Em seguida, recarregue a p·gina.
+m) Crie um campo oculto. Em seguida, recarregue a p√°gina.
 
-<label>Isto È um campo oculto</label>
+<label>Isto √© um campo oculto</label>
 <input type="hidden" value=""/><br/>
 
-n) Crie um campo de senha. Em seguida, recarregue a p·gina.
+n) Crie um campo de senha. Em seguida, recarregue a p√°gina.
 
-<label>Isto È um campo de senha</label>
+<label>Isto √© um campo de senha</label>
 <input type="password"/><br/>
 
-o) Crie uma caixa de seleÁ„o. Em seguida, recarregue a p·gina.
+o) Crie uma caixa de sele√ß√£o. Em seguida, recarregue a p√°gina.
 
-<label>Isto È uma caixa de verificaÁ„o</label>
+<label>Isto √© uma caixa de verifica√ß√£o</label>
 <input type="checkbox"/><br/>
 
-p) Crie um bot„o de r·dio. Em seguida, recarregue a p·gina.
+p) Crie um bot√£o de r√°dio. Em seguida, recarregue a p√°gina.
 
-<label>Isto È um bot„o de r·dio</label>
+<label>Isto √© um bot√£o de r√°dio</label>
 <input type="radio"/><br/>
 
-q) Crie um caixa de seleÁ„o contendo um item. Em seguida, recarregue a p·gina.
+q) Crie um caixa de sele√ß√£o contendo um item. Em seguida, recarregue a p√°gina.
 
-<label>Isto È uma caixa de seleÁ„o</label>
+<label>Isto √© uma caixa de sele√ß√£o</label>
 <select><option>Item 1</option></select><br/>
 
-r) Crie um campo de arquivo. Em seguida, recarregue a p·gina.
+r) Crie um campo de arquivo. Em seguida, recarregue a p√°gina.
 
-<label>Isto È um campo de arquivo</label>
+<label>Isto √© um campo de arquivo</label>
 <input type="file"/><br/>
 
-s) Crie um bot„o submit. Em seguida, recarregue a p·gina, preencha alguns campos e acione o bot„o submit.
+s) Crie um bot√£o submit. Em seguida, recarregue a p√°gina, preencha alguns campos e acione o bot√£o submit.
 
-<label>Isto È um bot„o submit</label>
+<label>Isto √© um bot√£o submit</label>
 <input type="submit" value="Submit"><br/>
   
-t) Crie um bot„o reset. Em seguida, recarregue a p·gina, preencha alguns campos e acione o bot„o reset.
+t) Crie um bot√£o reset. Em seguida, recarregue a p√°gina, preencha alguns campos e acione o bot√£o reset.
 
-<label>Isto È um bot„o reset</label>
+<label>Isto √© um bot√£o reset</label>
 <input type="reset" value="Reset"><br/>
 
-u) Crie um bot„o comum. Em seguida, recarregue a p·gina. preencha alguns campos e acione o bot„o comum.
+u) Crie um bot√£o comum. Em seguida, recarregue a p√°gina. preencha alguns campos e acione o bot√£o comum.
 
-<label>Isto È um bot„o comum</label>
+<label>Isto √© um bot√£o comum</label>
 <input type="button" value="Button"><br/>
 
-v) Adicione os arquivos no git local e faÁa o commit com o coment·rio "Criando projeto Atividade02".
+v) Adicione os arquivos no git local e fa√ßa o commit com o coment√°rio "Criando projeto Atividade02".
 
 
 
-2. Trabalhar os mÈtodos GET e POST. 
+2. Trabalhar os m√©todos GET e POST. 
 
-a) No menu Arquivo escolha a opÁ„o Novo Arquivo. Selecione a categoria HTML5/JavaScript e o tipo Arquivo HTML.
+a) No menu Arquivo escolha a op√ß√£o Novo Arquivo. Selecione a categoria HTML5/JavaScript e o tipo Arquivo HTML.
 
-b) Defina o nome login ‡ nova pagina e finalize o assistente.
+b) Defina o nome login √† nova pagina e finalize o assistente.
 
-c) Personalize o tÌtulo da p·gina login.html (Ex.: <title>Login do Sistema</title>).
+c) Personalize o t√≠tulo da p√°gina login.html (Ex.: <title>Login do Sistema</title>).
 
-d) Crie um formul·rio com o nome frmlogin e mÈtodo get.
+d) Crie um formul√°rio com o nome frmlogin e m√©todo get.
 
 <form name="frmlogin" method="get"></form>
 
-e) Dentro do formul·rio crie um rÛtulo "Usu·rio:" para o campo usuario.
+e) Dentro do formul√°rio crie um r√≥tulo "Usu√°rio:" para o campo usuario.
 
-<label for="usuario">Usu·rio:</label>
+<label for="usuario">Usu√°rio:</label>
 
 f) Crie um campo usuario com tamanho de 20 caracteres.
 
 <input type="text" name="usuario" size="20"/>
 
-g) Crie um rÛtulo "Senha:" para o campo senha.
+g) Crie um r√≥tulo "Senha:" para o campo senha.
 
 <label for="senha">Senha:</label>
 
@@ -114,40 +114,40 @@ h) Crie um campo senha com tamanho de 20 caracteres.
 
 <input type="password" name="senha" size="20"/>
 
-i) Crie um bot„o Enviar para sumbeter o formul·rio.
+i) Crie um bot√£o Enviar para sumbeter o formul√°rio.
 
 <input type="submit" value="Entrar"/> 
 
 j) Execute o arquivo index.html e observe o resultado. 
 
-k) Preencha o formul·rio de login e acione Entrar. O que aconteceu com a URL?
+k) Preencha o formul√°rio de login e acione Entrar. O que aconteceu com a URL?
 
-l) Altere o atributo method do formul·rio para post.
+l) Altere o atributo method do formul√°rio para post.
 
-m) Recarregue a p·gina login.html no navegador.
+m) Recarregue a p√°gina login.html no navegador.
 
-n) Preencha novamente o formul·rio de login e acione Entrar. O que aconteceu com a URL?
+n) Preencha novamente o formul√°rio de login e acione Entrar. O que aconteceu com a URL?
 
-o) Adicione os arquivos no git local e faÁa o commit com o coment·rio "Criando login em Atividade02".
+o) Adicione os arquivos no git local e fa√ßa o commit com o coment√°rio "Criando login em Atividade02".
 
 
 
-3. Criar um formul·rio de cadastro de alunos.
+3. Criar um formul√°rio de cadastro de alunos.
 
-a) Com o bot„o direito sobre Raiz do site, escolha a opÁ„o Novo->Arquivo HTML.
+a) Com o bot√£o direito sobre Raiz do site, escolha a op√ß√£o Novo->Arquivo HTML.
 
-b) Defina o nome cadastro ‡ nova p·gina e finalize o assistente.
+b) Defina o nome cadastro √† nova p√°gina e finalize o assistente.
 
-c) Personalize o tÌtulo da p·gina cadastro.html (Ex.: <title>Cadastro de Alunos</title>).
+c) Personalize o t√≠tulo da p√°gina cadastro.html (Ex.: <title>Cadastro de Alunos</title>).
 
-d) Crie um formul·rio com base no protÛtipo.
+d) Crie um formul√°rio com base no prot√≥tipo.
 
 Cadastrar Aluno
      _____________
-ID: |_____________|   <== Esses componentes est„o invisÌveis
+ID: |_____________|   <== Esses componentes est√£o invis√≠veis
 
             _____________
-MatrÌcula: |_____________|
+Matr√≠cula: |_____________|
 
        ___________________________________________________
 Nome: |___________________________________________________|
@@ -156,16 +156,16 @@ Nome: |___________________________________________________|
 Email: |___________________________________________________|
 
      __________
-UF: |________|v|      <== ContÈm apenas DF e GO
+UF: |________|v|      <== Cont√©m apenas DF e GO
 
                    _
-Cursos desejados: |_| An·lise e Desenvolvimento de Sistemas
+Cursos desejados: |_| An√°lise e Desenvolvimento de Sistemas
                    _
                   |_| Jogos Digitais    
                    _
                   |_| Redes de Computadores 
                    _  
-                  |_| SeguranÁa da InformaÁ„o
+                  |_| Seguran√ßa da Informa√ß√£o
 
 
 Bolsa de estudo: () Integral 100%
@@ -182,6 +182,6 @@ Bolsa de estudo: () Integral 100%
 | Salvar | | Desistir |
 +--------+ +----------+
 
-e) Adicione os arquivos no git local e faÁa o commit com o coment·rio "Criando cadastro de alunos em Atividade02".
+e) Adicione os arquivos no git local e fa√ßa o commit com o coment√°rio "Criando cadastro de alunos em Atividade02".
 
-f) Envie os arquivos versionados para o git remoto acionando a opÁ„o Expandir para Upstream do menu Equipe->Remoto. 
+f) Envie os arquivos versionados para o git remoto acionando a op√ß√£o Expandir para Upstream do menu Equipe->Remoto. 
