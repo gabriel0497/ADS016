@@ -1,0 +1,161 @@
+﻿1. Trabalhar a sintaxe da Linguagem JavaScript na console no navegador.
+
+a) Abra o navegador Chrome ou Firefox.
+
+b) Ative as ferramentas do desenvolvedor pressionando a tecla F12 ou CTRL+SHIFT+I. Posicione o painel das ferramentas na parte de baixo do navegador (Dica: botão Customize DevTools e Dock to bottom).
+
+c) Clique na aba console e declare uma variável x sem valor (Dica: digite var x; e pressione ENTER).
+
+d) Exiba o valor da variável x (Dica: digite x; e pressione ENTER). 
+
+e) Qual o tipo da variável x (Dica: digite typeof(x); e pressione ENTER)?
+
+f) Atribua o valor 10 para a variável x (Dica: digite x=10; e pressione ENTER). Qual o tipo da variável?
+
+g) Atribua o valor "texto" para a variável x. Qual o tipo da variável?
+
+h) Atribua o valor true para a variável x. Qual o tipo da variável?
+
+i) Declare outra variável X com o valor 1. 
+
+j) A variável x e igual a variável X (Dica: digite x == X e pressione ENTER)? Elas são do mesmo tipo?
+
+k) A variável x é idêntica a variável X (Dica: digite x === X e pressione ENTER)?
+
+l) Declare uma variável 1decimal. O que aconteceu?
+
+m) Declare uma variável decimal1 e atribua o valor 1/3.
+
+n) Multiplique 10 a variável decimal1 (Dica: decimal1 *= 10). Qual o valor exibido?
+
+o) Atribua o valor 10/3 a variável decimal1. O valor exibido é o mesmo do item anterior?
+
+p) Declare a constante PI com o valor 3.14 (Dica: const PI = 3.14;). Em seguida, tente alterar o valor da constante. O que aconteceu?
+
+q) Declare uma estrutura condicional que testa se resto da divisão de um número inteiro qualquer por 2 é igual a zero. Se for imprima "número par", senão imprima "número impar" (Dica: imprima com a função console.log()).
+
+r) Declare um laço que se repita de 1 a 10 (Dica: for(i=1; i<=10; i++) {}). Dentro do laço, se o resto da divisão do contador i por 3 é igual a zero (ou seja, i é múltiplo de 3) então imprima o valor do contador.
+
+s) Refaça o laço utilizando as estruturas while e do-while.
+
+t) Declare uma função isAnoBissexto que recebe um parâmetro ano (Dica: function isAnoBissexto(ano) {}). Dentro na função retorne se o ano é múltiplo de 4 e não é múltiplo de 100, ou é múltiplo de 400.
+
+u) Chame a função isAnoBissexto passando como parâmetro o valor 2019. Depois faça o teste com o valor 2020. Qual o resultado?
+
+v) Declare uma função getEscalaQualitativa que recebe um parâmetro nota. Dentro da função caso a nota seja igual a 1 imprima Ruim. Caso a nota seja igual a 2 imprima Insuficiente. Caso a nota seja igual a 3 imprima Suficiente. Caso a nota seja igual a 4 imprima Bom. Caso a nota seja 5 imprima Ótimo. Caso contrário imprima Nota inválida.
+
+w) Teste a função getEscalaQualitativa com valores entre 0 e 6. 
+
+x) Chame a função alert() passando a mensagem "Olá Mundo!". Qual o resultado?
+
+y) Chame a função confirm() passando a mensagem "Deseja excluir?" e pressione Ok. Qual valor retornado pela função?
+
+z) Chame novamente a função confirm() e pressione Cancelar. Qual valor retornado pela função?
+
+
+
+2. Manipular arrays e objetos na Linguagem JavaScript.
+
+a) Declare uma variável serie e atribua um array de 1 a 5 (Dica: var serie = [1,2,3,4,5];). Qual o tipo da variável?
+
+b) Declare uma variável pessoa que deve ter as propriedades nome e idade (Dica: var pessoa = {nome: "JOSE", idade: 30}). Qual o tipo da variável?
+
+c) Qual o valor do elemento que está na posição 2 da variável serie (Dica: serie[2];). 
+
+d) Tente acessar a posição 6 da variável serie. O que aconteceu?
+
+e) Declare um laço que se repita de 0 até tamanho da variável serie e imprima cada elemento do array (Dica: for(i=0; i<serie.length; i++) {}).
+
+f) Declare um laço que imprima de elementos da variável serie em ordem invertida (ou seja, do último até o primeiro).
+
+g) Acrescente o elemento 6 na variável serie (Dica: serie.push(6);). Qual o tamanho do array?
+
+h) Declare uma função localizarElemento que recebe como parâmetro uma lista e uma chave. 
+
+i) No corpo da função faça um laço que percorra toda a lista e verifique se o elemento da lista é igual à chave. Se for retorne a posição e interrompa o laço com break. Se ao final do laço não encontrar o elemento retorne -1.
+
+j) Chame a função localizarElemento passando a variável serie e a chave 4. Qual o resultado?
+
+k) Chame novamente a função localizarElemento passando a variável serie e a chave 8. Qual o resultado?
+
+l) Liste as propriedades da variável pessoa (Dica: pessoa;).
+
+m) Altere o valor da propriedade nome para "JOAO" (Dica: pessoa.nome = "JOAO").
+
+n) Acrescente a propriedade sobrenome à variável pessoa (Dica: pessoa.sobrenome = "SANTOS";). Liste novamente as propriedades da variável.
+
+o) Acrescente o método getNomeCompleto à variável pessoa para retornar o valor das propriedades nome e sobrenome (Dica: pessoa.getNomeCompleto = function() { return this.nome + " " + this.sobrenome; }).
+
+p) Qual o nome completo da variável pessoa (Dica: getNomeCompleto();)?
+
+
+
+3. Utilizar as funções String da Linguagem JavaScript.
+
+a) Declare uma variável string atribuindo o valor "Linguagem".
+
+b) Qual o tamanho da variável string (Dica: string.length;)?
+
+c) Qual o caractere da posição 5 na variável string (Dica: string[5]; ou string.charAt(5);)?
+
+d) Concatene a palavra "JavaScript" com a variável string (Dica: string.concat(" JavaScript"). Alterou-se o valor da variável?
+
+e) Refaça a concatenação anterior armazenando o resultado na variável string. Alterou-se o valor da variável?
+
+f) Converta o valor da variável string para maiúsculo (Dica: string.toUpperCase();). Alterou-se o valor da variável?
+
+g) Separe o valor da variável string em palavras (Dica: string.split(" ");).
+
+h) Declare a função getNumVogais que recebe um parâmetro s. 
+
+i) No corpo da função declare a variável numero com o valor inicial 0. Declare também uma variável vogais que recebe o texto "AaEeIiOoUu". 
+
+j) Depois declare um laço que repita de 0 até menor que tamanho de s. 
+
+k) Dentro do laço verifique se o caractere de s existe em vogais (Dica: vogais.indexOf(s.charAt(i)) >= 0). Se existir incremente a variável numero. 
+
+l) Faça a função getNumVogais retornar a variável numero. 
+
+m) Chame a função getNumVogais passando a variável string como parâmetro. Qual o resultado obtido?
+
+n) Declare a função conjulgaVerboSufixoAr que recebe um parâmetro verbo.
+
+o) No corpo da função converta o verbo para maiúsculo.
+
+p) Se o verbo não terminar em AR (Dica: verbo.endsWith("AR")), retorne a mensagem "Verbo não terminado em AR". 
+
+q) Remova o sufixo AR do verbo (Dica: verbo.substr(0,verbo.length-2)) e retorne conjugação no presente (ex.: EU DIGIT+O, TU DIGIT+AS, ELE DIGIT+A, NÓS DIGIT+AMOS, VÓIS DIGIT+AIS, ELES DIGIT+AM).
+
+r) Chame a função conjulgaVerboSufixoAr passando os verbos "Programar" e Desenvolver. Qual o resultado obtido?
+
+
+
+4. Integrar código JavaScript dentro de uma página HTML.
+
+a) Abra o aplicativo NetBeans IDE.
+
+b) No menu Arquivo escolha a opção Novo Projeto. Selecione a categoria HTML5/JavaScript e o projeto Aplicação HTML5/JS.
+
+c) Prossiga definindo o nome Atividade03 ao projeto. Verifique se a localização do projeto está indicando a pasta ADS016. Senão estiver, localize-a acionando Procurar. 
+
+d) Prossiga selecionando a opção Nenhum Modelo de Site. Em seguida, desmarque todos os itens de ferramentas e finalize o assistente.
+
+e) Na página index.html crie um formulário com alguns campos de entrada e o botão Submit.
+
+f) No menu Arquivo escolha a opção Novo Arquivo. Selecione a categoria HTML5/JavaScript e o tipo Arquivo JavaScript.
+
+g) Defina o nome scripts ao novo arquivo e finalize o assistente.
+
+h) Dentro do arquivo JS digite o código alert("Olá Mundo!").
+
+i) Integre o arquivo JS a página index.html (Dica: acrescente a linha <script src="scripts.js"></script> antes da tag </head>).
+
+j) Execute a página index.html e observe o resultado.
+
+k) Mova a linha <script> para antes da tag </body>.
+
+l) Recarregue a página index.html no navegador. Notou alguma diferença?
+
+m) Adicione os arquivos no git local e faça o commit com o comentário "Criando projeto Atividade03".
+
+n) Envie os arquivos versionados para o git remoto acionando a opção Expandir para Upstream do menu Equipe->Remoto. 
