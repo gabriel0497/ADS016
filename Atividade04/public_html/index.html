@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Atividade 04</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <body onload="console.log('Onload disparado...')">
+    <body>
        
-        <div>Primeira div</div>
-        <div>Segunda div</div>
+        <form action="" onsubmit="console.log('Onsubmit disparado...')">
+            <label>
+                Campo de Texto:
+            </label>
+            <input type="text" size="30"  onload="console.log('Onload disparado...')" onfocus="console.log('Onfocus Disparando')" onclick="console.log('OnClick Disparando')" onblur="console.log('OnBLur Disparando')" onchange="console.log('On Change Disparando')" onselect="console.log('OnSelect disparando')"/>
+
+            <input type="submit" value="Submit">
+            
+            
+        </form>
+        
     </body>
 </html>
