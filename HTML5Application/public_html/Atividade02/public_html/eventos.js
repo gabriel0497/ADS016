@@ -1,3 +1,5 @@
+
+
 function validarMatricula(event) {
     if (isNaN(this.value) || this.value <= 0) {
       msg = document.createElement('span');
