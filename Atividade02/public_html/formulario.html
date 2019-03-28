@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Formulários HTML</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form>
+            
+        <label>Isto é um campo de texto: </label>
+        <input type="text" size="30" name="c_texto"/><br/>
+        <label>Isto é um campo de texto somente leitura:</label>
+        <input type="text" size="30" name="c_texto_read" readonly="readonly" value="Somente Leitura"/><br/>
+        <label>Isto é um campo de texto desabilitado:</label>
+        <input type="text" size="30" name="c_texto_disable" disabled="disabled"/><br/>
+        <label>Isto é uma area de texto:</label>
+        <textarea rows="5" cols="30" name="c_text_aera"></textarea><br>
+        <label>Isto é um campo oculto</label>
+        <input type="hidden" value="" name="c_texto_read"/><br/> 
+        <label>Isto é um campo de senha</label>
+        <input type="password"/><br/>
+        <label>Isto é uma caixa de verificação</label>
+        <input type="checkbox" name="ativo" value="S"/>SIM<br>
+        <label>Isto é um botão de rádio</label>
+        <input type="radio" name="f" checked value="M"/>Masculino
+        <input type="radio" name="f" checked value="F"/>Feminino<br/>
+        </form>
+    </body>
+</html>
