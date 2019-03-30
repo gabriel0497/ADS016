@@ -8,49 +8,51 @@
     <body>
         
         <div>
-            <form>
+            
+            <!-- Formulario da atividade 02 -->
+            <form onsubmit="validarFormulario()">
                 <input type="hidden" value=""/><br/>
                 
                 <label>Matricula</label>
-                <input type="text" size="30" onblur="validarMatricula(event)"/><br/>
+                    <input type="text" name="matricula" id="inputMatricula" size="20" onblur="validarMatricula()"/><br/>
                 
                 <label>Nome</label>
-                <input type="text" size="30"/><br/>
+                    <input type="text" name="nome" id="inputNome" size="30" onblur="validarNome()"/><br/>
                 
                 <label>Email</label>
-                <input type="text" size="30"/><br/>
+                    <input type="text" name="email" id="inputEmail" size="30" onblur="validarEmail()"/><br/>
                 
                 <label>UF</label>
-                <select>
+                    <select>
                     <option>DF</option>
                     <option>GO</option>
-                </select><br/>
+                    </select><br/>
                 
                 <label>Cursos Desejados:</label><br/>
                 
                     <label>ADS</label>
-                    <input type="checkbox"/><br/>
+                        <input type="checkbox" onclick="validarCursos()"/><br/>
                     
                     <label>Jogos Digitais</label>
-                    <input type="checkbox"/><br/>
+                        <input type="checkbox" onclick="validarCursos()"/><br/>
                     
                     <label>Redes de Computadores</label>
-                    <input type="checkbox"/><br/>
+                        <input type="checkbox"  onclick="validarCursos()"/><br/>
                     
                     <label>Segurança da Informação</label>
-                    <input type="checkbox"/><br/>
+                        <input type="checkbox"  onclick="validarCursos()"/><br/>
                 
                 <label>Bolsa de Estudos:</label><br/>  
-                <input type="radio" name="bolsa"/>Integral 100%<br/>
-                <input type="radio" name="bolsa"/>Parcial 50%  <br/>
-                <input type="radio" name="bolsa"/>Parcial 50%  <br/>
-                <input type="radio" name="bolsa"/>Parcial 25%  <br/>
-                <input type="radio" name="bolsa"/>Sem Bolsa    <br/>
+                    <input type="radio" name="bolsa" onclick="validarBolsa()"/>Integral 100%<br/>
+                    <input type="radio" name="bolsa"/>Parcial 50%  <br/>
+                    <input type="radio" name="bolsa"/>Parcial 50%  <br/>
+                    <input type="radio" name="bolsa"/>Parcial 25%  <br/>
+                    <input type="radio" name="bolsa"/>Sem Bolsa    <br/>
                 
                 <label>Salvar:     </label>
-                <input type="submit" value="Salvar"><br/>
+                    <input type="submit" value="Salvar" ><br/>
                 <label>Desistir</label>
-                <input type="button" value="Desistir"><br/>
+                    <input type="button" value="Desistir"><br/>
                 
             </form>
             
