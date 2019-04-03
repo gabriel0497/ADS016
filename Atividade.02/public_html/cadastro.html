@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cadastro de Alunos</title>
+        <meta charset="UTF-8">
+        <style>
+            body{
+                margin: 0;
+                padding: 0;
+            }
+            #pai{
+                border: 0px solid black;
+                margin-left: 50%;
+                margin-top: 25%;
+                transform: translate(-50%,-50%);
+            }
+           
+        </style>
+    </head>
+    <body>
+        <div id="pai">
+            <div id="id">
+                <input type="hidden" name="id">
+            </div>
+
+            <div id="matricula">
+                <label>Matrícula:</label>
+                <input type="text" name="matricula">
+            </div>
+
+            <div id="nome">
+                <label>Nome:</label>
+                <input type="text" name="nome">
+            </div>
+
+            <div id="email">
+                <label>Email:</label>
+                <input type="email" name="email">
+            </div>
+
+            <div id="uf">
+                <label>UF:</label>
+                <select>
+                    <option value="UF">---Insira sua UF</option>
+                    <option value="DF">DF</option>
+                    <option value="GO">GO</option>
+
+                </select>
+
+            </div>
+
+            <div>
+                <label>Curso desejado:</label><br>
+                <input type="checkbox" id="curso" name="curso">
+                <label for="Curso">Análise e Desenvolvimento de Sistemas</label><br>
+                <input type="checkbox" id="curso" name="curso">
+                <label for="Curso">Jogos Digitais</label><br>
+                <input type="checkbox" id="curso" name="curso">
+                <label for="Curso">Redes de Computadores</label><br>
+                <input type="checkbox" id="curso" name="curso">
+                <label for="Curso">Segurança da Informação</label><br>
+
+                <input type="submit" value="Salvar">
+                <button type="button"> Desistir </button>
+
+            </div>
+
+        </div>
+
+    </body>
+</html>
