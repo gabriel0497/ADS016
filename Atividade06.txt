@@ -1,0 +1,7 @@
+1. Criar um script PHP para tratar requisições HTTP.
+
+2. Utilizar funções de String na linguagem PHP.
+
+3. Utilizar funções de Array na linguagem PHP.
+
+4. Trabalhar com modulação de código em PHP.
