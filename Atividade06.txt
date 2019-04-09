@@ -55,15 +55,29 @@ r) No navegador pressione as teclas CTRL+SHIFT+I para exibir as ferramentas de d
 
 
 
-2. Manipular funcões de String em PHP.
+2. Manipular funcões em PHP envolvendo String e Array.
+
+a) Contar a quantidade de caractes da string.
+
+b) Converter o campo sumbetido em maisuculo e minusculo
+
+c) Remover os espaços em branco da string
+
+d) Obter um pedaço da string
+
+e) Substituir espaço por _
+
+f) Dividir a string em um array.
+
+g) Adicionar um elemento no array.
+
+h) localizar no array
+
+i) inverter o array.
 
 
 
-3. Manipular funções de Array em PHP.
-
-
-
-4. Trabalhar com modularização em PHP.
+3. Trabalhar com modularização em PHP.
 
 a) Crie um arquivo modulo1.php. Declare a variável $x com o valor 'Olá Mundo!';
 
