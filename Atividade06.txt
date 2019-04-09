@@ -1,7 +1,66 @@
 1. Criar um script PHP para tratar requisições HTTP.
 
+a) Abra o aplicativo NetBeans IDE.
+
+b) No menu Arquivo escolha a opção Novo Projeto. Selecione a categoria PHP e o projeto Aplicação PHP.
+
+c) Prossiga definindo o nome Atividade06 ao projeto. Verifique se a localização do projeto está indicando a pasta ADS016. Senão estiver, localize-a acionando Procurar.
+
+d) Prossiga marcando a opção Copiar arquivos da pasta fonte para outra localização. Em seguida, indique o caminho C:\Xampp\htdocs\Atividade03. Finalize o assistente.
+
+e) Inicie o servidor Apache HTTP pelo Xampp. Execute o projeto Atividade05 acionando o menu Executar->Executar Projeto. Qual foi o resultado?
+
+f) Altere o conteúdo do arquivo index.php para exibir um formulário com um campo de texto e um botão Enviar. Faça o fomulário acionar a action trata.php.
+
+<form action="trata.php">
+   <input type="text" name="campo"/>
+   <input type="submit" name="submit" value="Enviar"/>
+</form>
+
+g) Recarregua a página index.php no navegador. Preencha um campo ao formulário e clique em Enviar. Qual foi o resultado?
+
+h) Crie um arquivo trata.php clicando no botão Arquivo->Novo Arquivo. Escolha na categoria PHP e no tipo Arquivo PHP.
+
+i) Altere o conteúdo do arquivo trata.php para exibir os valores das variáveis $_GET, $_POST e $_REQUEST (Dica: utilize a função var_dump).
+
+j) Recarregua a página index.php no navegador. Preencha um campo ao formulário e clique em Enviar. Qual foi o resultado?
+
+k) Altere na página index.php acrescentando o atributo méthod ao fomulário com o valor post.
+
+l) Recarregua a página index.php no navegador. Preencha um campo ao formulário e clique em Enviar. Qual foi o resultado?
+
+m) No arquivo trata.php crie uma nova sessão PHP (Dica: session_start();)
+
+n) Verifique se a chave campo foi armazenada na variável superglobal $_SESSION. Se foi, exiba o valor. Caso contrário salve na sessão o valor da chave campo que foi submetido na requisição. 
+
+if ( ! isset($_SESSION['campo']) ) {
+   $_SESSION['campo'] = $_REQUEST['campo'];
+} else {
+   echo $_SESSION['campo'];
+}
+
+o) Recarregua a página index.php no navegador. Preencha um campo ao formulário e clique em Enviar. Qual foi o resultado?
+
+p) No arquivo trata.php verifique se a chave campo foi armazenada na variável superglobal $_COOCKIE. Se foi, exiba o valor. Caso contrário salve no coockie o valor da chave campo que foi submetido na requisição.
+
+if ( ! isset($_COOKIE['campo']) ) {
+   setcookie('campo', $_REQUEST['campo'], time() + (3 * 24 * 3600));
+} else {
+   echo $_COOKIE['campo'];
+}
+
+q) Recarregua a página index.php no navegador. Preencha um campo ao formulário e clique em Enviar. Qual foi o resultado?
+
+r) No navegador pressione as teclas CTRL+SHIFT+I para exibir as ferramentas de desenvolvimento. Clique na aba Application e verifique se foi criado um cookie no item Cookies.
+
+
+
 2. Utilizar funções de String na linguagem PHP.
 
 3. Utilizar funções de Array na linguagem PHP.
 
 4. Trabalhar com modulação de código em PHP.
+
+m) Adicione os arquivos no git local e faça o commit com o comentário "Criando projeto Atividade06".
+
+n) Envie os arquivos versionados para o git remoto acionando a opção Expandir para Upstream do menu Equipe->Remoto.
