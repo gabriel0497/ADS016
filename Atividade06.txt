@@ -55,12 +55,44 @@ r) No navegador pressione as teclas CTRL+SHIFT+I para exibir as ferramentas de d
 
 
 
-2. Utilizar funções de String na linguagem PHP.
+2. Trabalhar com modularização em PHP.
 
-3. Utilizar funções de Array na linguagem PHP.
+a) Crie um arquivo modulo1.php. Declare a variável $x com o valor 'Olá Mundo!';
 
-4. Trabalhar com modulação de código em PHP.
+<?php
 
-m) Adicione os arquivos no git local e faça o commit com o comentário "Criando projeto Atividade06".
+$x = 'Olá Mundo!';
+
+b) Crie um arquivo modulo2.php. Inclua o modulo1.php e imprima o valor de $x.
+
+<?php
+
+include("modulo1.php");
+
+echo $x;
+
+c) Carregue o arquivo modulo2.php no navegador pela url http://localhost/Atividade06/modulo2.php. Qual foi o resultado?
+
+d) Crie um arquivo modulo3.php. Declare a variável $cont, incremente-a de 1 e imprima seu valor.
+
+<?php
+
+$cont++;
+echo "<br />Contador = $cont";
+
+e) No arquivo modelo2.php inicialize a variável $cont com 0 e inclua três vezes o modulo3.php.
+
+<?php
+...
+$cont = 0;
+include("modulo3.php");
+include("modulo3.php");
+include("modulo3.php");
+
+f) Carregue o arquivo modulo2.php no navegador. Qual foi o resultado?
+
+g) No arquivo modelo2.php inclua três vezes o modulo3.php utilizando include_
+
+a) Adicione os arquivos no git local e faça o commit com o comentário "Criando projeto Atividade06".
 
 n) Envie os arquivos versionados para o git remoto acionando a opção Expandir para Upstream do menu Equipe->Remoto.
