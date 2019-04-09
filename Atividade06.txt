@@ -55,7 +55,15 @@ r) No navegador pressione as teclas CTRL+SHIFT+I para exibir as ferramentas de d
 
 
 
-2. Trabalhar com modularização em PHP.
+2. Manipular funcões de String em PHP.
+
+
+
+3. Manipular funções de Array em PHP.
+
+
+
+4. Trabalhar com modularização em PHP.
 
 a) Crie um arquivo modulo1.php. Declare a variável $x com o valor 'Olá Mundo!';
 
@@ -71,7 +79,7 @@ include("modulo1.php");
 
 echo $x;
 
-c) Carregue o arquivo modulo2.php no navegador pela url http://localhost/Atividade06/modulo2.php. Qual foi o resultado?
+c) Carregue o arquivo modulo2.php no navegador. Qual foi o resultado?
 
 d) Crie um arquivo modulo3.php. Declare a variável $cont, incremente-a de 1 e imprima seu valor.
 
@@ -83,16 +91,27 @@ echo "<br />Contador = $cont";
 e) No arquivo modelo2.php inicialize a variável $cont com 0 e inclua três vezes o modulo3.php.
 
 <?php
-...
+
 $cont = 0;
+
 include("modulo3.php");
 include("modulo3.php");
 include("modulo3.php");
 
 f) Carregue o arquivo modulo2.php no navegador. Qual foi o resultado?
 
-g) No arquivo modelo2.php inclua três vezes o modulo3.php utilizando include_
+g) No arquivo modelo2.php inclua três vezes o modulo3.php utilizando include_once.
 
-a) Adicione os arquivos no git local e faça o commit com o comentário "Criando projeto Atividade06".
+h) Carregue o arquivo modulo2.php no navegador. Qual foi o resultado?
+
+i) Crie um arquivo modulo4.php. Declare a variável $cont com o valor 0 e inclua o modulo3.php
+
+j) Carregue o arquivo modulo4.php no navegador. Qual foi o resultado?
+
+k) No arquivo modulo3.php apague a ultima " do código. Carregue o arquivo modulo4.php no navegador. Qual foi o resultado?
+
+l) No arquivo modulo4.php troque a cláusula include por require. Carregue o arquivo modulo4.php no navegador. Qual foi o resultado?
+
+m) Adicione os arquivos no git local e faça o commit com o comentário "Criando projeto Atividade06".
 
 n) Envie os arquivos versionados para o git remoto acionando a opção Expandir para Upstream do menu Equipe->Remoto.
