@@ -6,9 +6,9 @@ b) No menu Arquivo escolha a opção Novo Projeto. Selecione a categoria PHP e o
 
 c) Prossiga definindo o nome Atividade06 ao projeto. Verifique se a localização do projeto está indicando a pasta ADS016. Senão estiver, localize-a acionando Procurar.
 
-d) Prossiga marcando a opção Copiar arquivos da pasta fonte para outra localização. Em seguida, indique o caminho C:\Xampp\htdocs\Atividade03. Finalize o assistente.
+d) Prossiga marcando a opção Copiar arquivos da pasta fonte para outra localização. Em seguida, indique o caminho C:\Xampp\htdocs\Atividade06. Finalize o assistente.
 
-e) Inicie o servidor Apache HTTP pelo Xampp. Execute o projeto Atividade05 acionando o menu Executar->Executar Projeto. Qual foi o resultado?
+e) Inicie o servidor Apache HTTP pelo Xampp. Execute o projeto Atividade06 acionando o menu Executar->Executar Projeto. Qual foi o resultado?
 
 f) Altere o conteúdo do arquivo index.php para exibir um formulário com um campo de texto e um botão Enviar. Faça o fomulário acionar a action trata.php.
 
