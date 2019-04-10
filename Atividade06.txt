@@ -17,17 +17,17 @@ f) Altere o conteúdo do arquivo index.php para exibir um formulário com um cam
    <input type="submit" name="submit" value="Enviar"/>
 </form>
 
-g) Recarregua a página index.php no navegador. Preencha um campo ao formulário e clique em Enviar. Qual foi o resultado?
+g) Recarregua a página index.php no navegador. Preencha um valor no campo do formulário e clique em Enviar. Qual foi o resultado?
 
 h) Crie um arquivo trata.php clicando no botão Arquivo->Novo Arquivo. Escolha na categoria PHP e no tipo Arquivo PHP.
 
 i) Altere o conteúdo do arquivo trata.php para exibir os valores das variáveis $_GET, $_POST e $_REQUEST (Dica: utilize a função var_dump).
 
-j) Recarregua a página index.php no navegador. Preencha um campo ao formulário e clique em Enviar. Qual foi o resultado?
+j) Recarregua a página index.php no navegador. Preencha um valor no campo do formulário e clique em Enviar. Qual foi o resultado?
 
 k) Altere na página index.php acrescentando o atributo méthod ao fomulário com o valor post.
 
-l) Recarregua a página index.php no navegador. Preencha um campo ao formulário e clique em Enviar. Qual foi o resultado?
+l) Recarregua a página index.php no navegador. Preencha um valor no campo do formulário e clique em Enviar. Qual foi o resultado?
 
 m) No arquivo trata.php crie uma nova sessão PHP (Dica: session_start();)
 
@@ -35,21 +35,23 @@ n) Verifique se a chave campo foi armazenada na variável superglobal $_SESSION.
 
 if ( ! isset($_SESSION['campo']) ) {
    $_SESSION['campo'] = $_REQUEST['campo'];
+   echo "Valor armazenado na sessão";
 } else {
    echo $_SESSION['campo'];
 }
 
-o) Recarregua a página index.php no navegador. Preencha um campo ao formulário e clique em Enviar. Qual foi o resultado?
+o) Recarregua a página index.php no navegador. Preencha um valor no campo do formulário e clique em Enviar. Qual foi o resultado?
 
 p) No arquivo trata.php verifique se a chave campo foi armazenada na variável superglobal $_COOCKIE. Se foi, exiba o valor. Caso contrário salve no coockie o valor da chave campo que foi submetido na requisição.
 
 if ( ! isset($_COOKIE['campo']) ) {
    setcookie('campo', $_REQUEST['campo'], time() + (3 * 24 * 3600));
+   echo "Valor armazenado no cookie";
 } else {
    echo $_COOKIE['campo'];
 }
 
-q) Recarregua a página index.php no navegador. Preencha um campo ao formulário e clique em Enviar. Qual foi o resultado?
+q) Recarregua a página index.php no navegador. Preencha um valor no campo do formulário e clique em Enviar. Qual foi o resultado?
 
 r) No navegador pressione as teclas CTRL+SHIFT+I para exibir as ferramentas de desenvolvimento. Clique na aba Application e verifique se foi criado um cookie no item Cookies.
 
@@ -57,23 +59,56 @@ r) No navegador pressione as teclas CTRL+SHIFT+I para exibir as ferramentas de d
 
 2. Manipular funcões em PHP envolvendo String e Array.
 
-a) Contar a quantidade de caractes da string.
+a) No arquivo trata.php exiba o tamanho da string do campo submetido na requisição.
 
-b) Converter o campo sumbetido em maisuculo e minusculo
+echo strlen($_REQUEST['campo']);
 
-c) Remover os espaços em branco da string
+b) Recarregua a página index.php no navegador. Preencha um campo ao formulário e clique em Enviar. Qual foi o resultado?
 
-d) Obter um pedaço da string
+c) No arquivo trata.php converta a string do campo submetido na requisição em maiúsculo e minúsculo.
 
-e) Substituir espaço por _
+echo strtoupper($_REQUEST['campo']);
+echo strtolower($_REQUEST['campo']);
 
-f) Dividir a string em um array.
+d) Recarregua a página index.php no navegador. Preencha um campo ao formulário e clique em Enviar. Qual foi o resultado?
 
-g) Adicionar um elemento no array.
+e) No arquivo trata.php obtenha parte da string do campo submetido na requisição a partir de uma posição inicial até 3 caracteres.
 
-h) localizar no array
+echo substr($_REQUEST['campo'], 0, 3);
 
-i) inverter o array.
+f) Recarregua a página index.php no navegador. Preencha um campo ao formulário e clique em Enviar. Qual foi o resultado?
+
+g) No arquivo trata.php substitua espaço por _ na string do campo submetido na requisição.
+
+echo str_replace(' ', '_', $_REQUEST['campo']);
+
+h) Recarregua a página index.php no navegador. Preencha um campo ao formulário e clique em Enviar. Qual foi o resultado?
+
+i) No arquivo trata.php divida a string do campo submetido em um array. Utilize o espaço como separador de elementos. Atribua a variável $array e exiba seu conteúdo.
+
+$array = explode(' ', $_REQUEST['campo']);
+var_dump($array);
+
+j) Recarregua a página index.php no navegador. Preencha um campo ao formulário e clique em Enviar. Qual foi o resultado?
+
+k) No arquivo trata.php adicione um elemento na variável $array e exiba o conteúdo da variável.
+
+array_push($array, 'outro');
+var_dump($array);
+
+l) Recarregua a página index.php no navegador. Preencha um campo ao formulário e clique em Enviar. Qual foi o resultado?
+
+m) No arquivo trata.php localize o elemento 'outro' no array exibindo a sua posição.
+
+echo array_search('outro', $array);
+
+n) Recarregua a página index.php no navegador. Preencha um campo ao formulário e clique em Enviar. Qual foi o resultado?
+
+o) No arquivo trata.php inverta os elementos da variável $array.
+
+var_dump(array_reverse($array));
+
+p) Recarregua a página index.php no navegador. Preencha um campo ao formulário e clique em Enviar. Qual foi o resultado?
 
 
 
