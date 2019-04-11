@@ -1,0 +1,38 @@
+
+
+
+Tecnologia Web   
+
+HTTP - Protocolo simples de transferência de dados.
+     - Sem estado (não gerencia sessão).
+	 - Métodos GET solicita um recurso. parametros passado na URL
+	           POST envia dados para processar. parametros embutidos na requisição.
+			   PUT envia um recurso para atualização.
+			   DELETE exclui um recurso.
+
+HTML - Linguagem de marcação de hipertexto usada para elaboração de páginas estáticas. 
+	 - Provê tags para construção de formulários.
+	    <form> - cria um fomulário
+		<input> - cria um campo de texto, botao
+	    <select> - cria uma caixa de seleção	  
+
+CSS - Linguagem que descreve estilo de um documento HTML.
+    - Uma estilo é descrito por uma regra composta de um seletor, propriedade e valor.
+	- Embutida na página web através da tag <link>
+
+JavaScript - Linguagem que manipula objetos HTML no navegador.
+           - Interpretada e fracamente tipada
+           - Usada para operações no lado cliente.
+           - Embutida na página web através da tag <script>.
+		   
+PHP - Linguagem de script usada para elaboração de páginas dinâmicas.
+    - Embutida na página através da tag <?php >.
+	- Trata uma requisição HTTP por meio de variáveis superglobais.
+	    $_GET - armazena dados enviados por GET
+		$_POST - armazena adados enviados por POST
+		$_REQUEST - armazena dados enviados por GET/POST
+	- Suporte a modularização por meio de inclusões de código.
+	     include - inclui um arquivo e alerta se estiver erro.
+		 include_once - um include executado uma única vez.
+		 require - incluir um arquivo e para se estiver erro.
+		 required_once - um require executado uma única vez.
