@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cadastro de Alunos</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <!--div>Cadastrar Aluno</div-->
+        <h2>Cadastrar Aluno</h2>
+        <form name="frmcadastro" method="post">
+            <label type="hidden"for="id">ID:</label>
+            <input type="hidden" value=""/>
+            <br>
+            <br>
+            <label for="matricula">Matricula:</label>
+            <input type="text" size="47"/>
+            <br>
+            <br>
+            <label for="matricula">Nome:</label>
+            <input type="text" size="50"/>
+            <br>
+            <br>
+            <label for="matricula">E-mail:</label>
+            <input type="text" size="50"/>
+            <br>
+            <br/>
+            <label>UF:</label>
+                <select>
+                    <option></option>
+                    <option>DF</option>
+                    <option>GO</option>
+                </select>
+            <br>
+            <br>
+            <label>Cursos desejados:</label><br/>
+                <input type="checkbox"/>Análise e Desenvolvimento de Sistemas
+                <br>
+                <input type="checkbox"/>Jogos Digitais
+                <br>
+                <input type="checkbox"/>Redes de Computadores
+                <br>
+                <input type="checkbox"/>Segurança da Informação
+                <br>
+            <br>
+            <label>Bolsa de estudos:</label>
+                <br>
+                <INPUT TYPE="RADIO" NAME="OPCAO" VALUE="op1"> Integral 100%
+                <br>
+                <INPUT TYPE="RADIO" NAME="OPCAO" VALUE="op2"> Parcial 75%
+                <br>
+                <INPUT TYPE="RADIO" NAME="OPCAO" VALUE="op3"> Parcial 50%
+                <br>
+                <INPUT TYPE="RADIO" NAME="OPCAO" VALUE="op4"> Parcial 25%
+                <br>
+                <INPUT TYPE="RADIO" NAME="OPCAO" VALUE="op5"> Sem Bolsa            
+                <br>
+            <br>
+            <input type="submit" value="Salvar"/> 
+            <input type="submit" value="Desistir"/> 
+        </form>
+    </body>
+</html>
