@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Cadastro de alunos</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form name="cadastro" method="post">
+            <input type="hidden" value="1308"/><br/>
+            
+            <label for="mat">Matrícula:</label>
+            <input type="number" size="30" id="mat"/></br>
+            
+            <label for="nome">Nome:</label>
+            <input type="text" size="30" id="nome"/></br>
+            
+            <label for="email">Email:</label>
+            <input type="text" size="30" id="email"/></br>
+            
+            <label>UF</label>
+            <select><option>DF</option><option>GO</option></select><br/>
+            
+            </br><label>Cursos desejados:</label></br>
+            <input type="checkbox" name=cadastro value="1"/>Análise e Desenvolvimento de sistemas
+            <input type="checkbox" name=cadastro value="2"/>Jogos digitais
+            <input type="checkbox" name=cadastro value="3"/>Redes de Computadores
+            <input type="checkbox" name=cadastro value="4"/>Segurança da informação 
+            
+            </br></br><label for="bolsa">Bolsa de estudo:</label></br>
+            <input type="radio" name="bolsa" value="Integral"/>Integral 100%
+            <input type="radio" name="bolsa" value="Integral"/>Parcial 75%
+            <input type="radio" name="bolsa" value="Integral"/>Parcial 50%
+            <input type="radio" name="bolsa" value="Integral"/>Parcial 25%
+            <input type="radio" name="bolsa" value="Integral"/>Sem bolsa
+            
+            
+            </br></br><input type="button" value="Salvar">          
+            <input type="button" value="Desistir">
+            
+        </form>
+    </body>
+</html>
