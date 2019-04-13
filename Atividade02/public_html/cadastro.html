@@ -9,27 +9,35 @@
     <body>
         <div>Cadastrar aluno</div>
         <form>
+            <br/>
             <label>ID: </label>
             <input type="text" size="15"/><br/>
-
+            
+            <br/>
             <label>Matricula</label>
-            <input type="text" size="15"/><br/>
-
+            <input   type="text" id ="inputMatricula" name = "matricula" size="15" onblur="validarMatricula()"/><br/>
+            
+            <br/>
             <label>Nome: </label>
-            <input  onblur="console.log('Onblur disparado...')" id ="inputNome" type="text" size="30"/><br/>
-
+            <input type="text"  id ="inputNome" size="30" onblur="validarNome()"/><br/>
+            
+            <br/>
             <label>E-mail: </label>
-            <input onblur="console.log('Onblur disparado...')" id = "inputEmail" type="text" size="30"/><br/>
-
+            <input type="text" id = "inputEmail" size="30" onblur="validarEmail()"/><br/>
+            
+            <br/>
             <label>UF</label>
             <select><option>DF</option><option>GO</option></select><br/>
-
-            <label>Cursos desejados</label>
-            <input type="checkbox"/>Análise e Desenvolvimento de Sistemas<br/>
-            <input type="checkbox"/>Jogos Digitais<br/>
-            <input type="checkbox"/>Redes de Computadores<br/>
-            <input type="checkbox"/>Segurança da Informação<br/>
-
+            
+            <br/>
+            <label>Cursos desejados: </label>
+            <br/>
+            <input type="checkbox" onclick = "validarCursos()"/>Análise e Desenvolvimento de Sistemas<br/>
+            <input type="checkbox" onclick = "validarCursos()"/>Jogos Digitais<br/>
+            <input type="checkbox" onclick = "validarCursos()"/>Redes de Computadores<br/>
+            <input type="checkbox" onclick = "validarCursos()"/>Segurança da Informação<br/>
+            
+            <br/>
             <label>Bolsa de estudo: </label>
             <input type="radio"/>Integral 100%<br/>
             <input type="radio"/>Integral 75%<br/>
@@ -37,7 +45,8 @@
             <input type="radio"/>Integral 25%<br/>
             <input type="radio"/>Sem bolsa<br/>
             
-            <input type="submit" value="Salvar"><br/>
+            <br/>
+            <input type="submit" value="Salvar" onsubmit="validarFormulario()"><br/>
             <input type="reset" value="Desistir"><br/>
         </form>
     </body>

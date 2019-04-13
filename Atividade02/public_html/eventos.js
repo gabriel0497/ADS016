@@ -33,3 +33,53 @@ function validarEmail(){
     return true;    
     
 }
+
+function validarCursos(){
+    total = 0;
+    caixas = document.querySelectorAll(`input[type=checkbox]`);
+    for(i=0; i<caixas.length; i++){
+        if(caixas[i].checked){
+            total++;
+            return true;
+        }//fim if
+    }//fim for
+    
+    if(total == 0 || total > 2){
+        msg = document.createElement(`span`);
+        msg.setAttribute(`id`, `erroCurso`);
+        msg.innerHTML = `Pelo menos um curso deve ser escolhido e no maximo dois`;
+        caixas[0].insertAdjacentElement("beforebegin", msg);
+        return false;
+    }//fim if
+    
+    msg = document.getElementById(`erroCurso`);
+    if(msg) document.forms[0].removeChild(msg);
+    return true;
+}//fim function
+
+function validarBolsa(event){
+    radios = document.querySelectorAll(`input[type = radio]`);
+    for (i = 0; i<radios.length; i++){
+        if(radios[i].checked){
+            msg = document.getElementById(`erroBolsa`);
+            if(msg) document.forms[0].removeChild(msg);
+            return true;
+        }//fim if
+    }//fim for
+    
+    msg = document.creatElement(`span`);
+    msg.setAttribute(`id`, `erroBolsa`);
+    msg.innerHTML = `Uma Bolsa deve ser escolhida.`;
+    radios[0].inserAdjacentElement("beforebegin", msg);
+    return false;
+ 
+}//fim fuction
+
+function validarFormulario(){
+    return validarMatricula() &&
+      validarNome() &&
+      validarEmail() &&
+      validarCursos() &&
+      validarBolsa();
+
+}//fim function
